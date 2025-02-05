@@ -10,7 +10,25 @@
       .st1 {
         fill: #4a89dc;
       }
+
+      #neptune-group:hover {
+        animation: disp 2s;
+      }
+
+      @keyframes disp {
+    0% { opacity: 0;} 
+    100% { opacity: 1;}
+  }
     </style>
+    <script>
+    const nepObj = document.querySelector('#neptune');
+
+    function logId() {
+      console.log(this.id);
+    }
+
+    nepObj.addEventListener('click',logId);
+    </script>
   </defs>
   <g id="neptune-group">
     <path id="neptune-background" class="st0" d="M800,400c0,220.9-179.1,400-400,400S0,620.9,0,400,179.1,0,400,0s400,179.1,400,400Z"/>

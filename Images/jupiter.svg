@@ -18,7 +18,29 @@
       .st3 {
         fill: #f5d67b;
       }
+
+      #jupiter-group:hover {
+        animation: shake 0.3s;
+      }
+
+      @keyframes shake {
+    0% { transform: translateX(0);} 
+    25% { transform: translateX(30px);} 
+
+    75% { transform: translateX(-60px);} 
+    100% { transform: translateX(0);}
+  }
     </style>
+
+    <script>
+    const jupObj = document.querySelector('#jupiter');
+
+    function logId() {
+      console.log(this.id);
+    }
+
+    jupObj.addEventListener('click',logId);
+    </script>
   </defs>
 
   <g id="jupiter-group"> 

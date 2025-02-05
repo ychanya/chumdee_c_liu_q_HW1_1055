@@ -19,8 +19,33 @@
         fill: #708aff;
       }
 
+      #uranus-group:hover {
+        animation: fadeInOut 1s;
+      }
+
+      #uranus-group #uranus-ring path {
+        animation: fadeInOut 3s;
+      }
+
+  @keyframes fadeInOut {
+    0% { opacity: 1; } 
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
       
     </style>
+
+    <script>
+    const marsObj = document.querySelector('#uranus');
+
+    function logId() {
+      console.log(this.id);
+    }
+
+    uraObj.addEventListener('click',logId);
+    </script>
+
   </defs>
   <g id="uranus-group">
    <g id="uranus-ring">
