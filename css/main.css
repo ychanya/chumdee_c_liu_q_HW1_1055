@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    overflow-y: hidden;
+}
+
+#saturn {
+    width: 150px;
+}
+
+#mars {
+    width: 90px;
+}
+
+#big-dipper-1, #big-dipper-2 {
+    width: 150px;
+}
+
+#big-dipper-1 {
+    transform: rotate(180deg);
+}
+
+#big-dipper-2 {
+    transform: rotate(45deg);
+}
+
+#jupiter {
+    width: 140px;
+}
+
+#neptune {
+    width: 80px;
+    padding-top: 50px;
+}
+
+#telescope {
+    margin-top: 50px;
+}
