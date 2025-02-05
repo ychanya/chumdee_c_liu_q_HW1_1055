@@ -22,7 +22,36 @@
       .st4 {
         fill: #dbb246;
       }
+
+      #saturn-group:hover {
+        animation: UpDown 1s;
+      }
+
+      #saturn-group:hover #saturn-inner-ring path {
+        animation: colour 1s;
+      }
+
+      @keyframes UpDown {
+    0% { transform: translateY(0); } 
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+      @keyframes colour {
+    0% { fill: #b68057; } 
+    50% { fill: azure; }
+    100% { fill: #b68057; }
+  }
     </style>
+
+    <script>
+    const satObj = document.querySelector('#saturn');
+
+    function logId() {
+      console.log(this.id);
+    }
+
+    satObj.addEventListener('click',logId);
+    </script>
   </defs>
 
   <g id="saturn-group">

@@ -48,3 +48,8 @@ body {
 #telescope {
     margin-top: 50px;
 }
+
+
+#saturn-group #saturn-inner-ring path {
+    fill: azure 1s ;
+  }
