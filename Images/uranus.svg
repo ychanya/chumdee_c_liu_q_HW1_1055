@@ -37,7 +37,7 @@
     </style>
 
     <script>
-    const marsObj = document.querySelector('#uranus');
+    const uraObj = document.querySelector('#uranus');
 
     function logId() {
       console.log(this.id);
